@@ -47,3 +47,8 @@ Below, we can see how the Python libraries easily and quickly copy the table con
 ![images/best_breeds_1.PNG](images/best_breeds_1.PNG)<br></br>
 
 ![images/best_breeds_2.PNG](images/best_breeds_2.PNG)<br></br>
+
+# API calls and JSON parsing (Extraction and Transformation)
+
+petfinder.com offers an API which is available after receiving an API key.  Using our key, we sent requests to the Petfinder API and received our responses in JSON format.  As you can see from the image below, there were far more details included in a typical JSON response than we required.\
+We parsed the responses to obtain the highlighted elements and used pandas to place these into a dataframe.<br></br>
