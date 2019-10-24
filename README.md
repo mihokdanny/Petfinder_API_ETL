@@ -28,6 +28,11 @@ https://www.petfinder.com/
 https://wallethub.com/edu/most-pet-friendly-cities/5562/
 https://www.akc.org/expert-advice/news/most-popular-dog-breeds-of-2018/
 
+# Authors
+
+* Daniel Mihok
+* Farah Clerveau
+
 # Setting Parameters
 
 petfinder.com lists many types of pets across many geographic areas, but we decided to focus on popular dog breeds in cities renowned for their "pet-friendliness."<br></br>
@@ -35,3 +40,10 @@ To obtain values for the parameters of US_pet_friendly_cities and most_popular_d
 Rather than manually copying the lists of cities and breeds, we decided to use tools such as pandas, requests, Beautiful Soup, csv, and urllib.request to "web scrape" the data listed on these sites.  By copying the lists in this manner, the code for this project will be more easily scalable.<br></br>
 Below, we can see how the Python libraries easily and quickly copy the table content from the sites into dataframes that we can use and/or save as database files.<br></br>
 
+![images/best_cities_1.PNG](images/best_cities_1.PNG)<br></br>
+
+![images/best_cities_2.PNG](images/best_cities_2.PNG)<br></br>
+
+![images/best_breeds_1.PNG](images/best_breeds_1.PNG)<br></br>
+
+![images/best_breeds_2.PNG](images/best_breeds_2.PNG)<br></br>
