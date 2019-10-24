@@ -1,6 +1,6 @@
 # Petfinder_API_ETL
 
-Trying to find the perfect pet?
+Trying to find the perfect pet?\
 petfinder.com lists thousands of pets on their website and allows you to search one location at a time and filter by pet type!  But what if you'd like to be more specific in your search by including factors that are not default filters?  What if you'd like to perform an analysis of pets across more than one location without repeating your search?<br></br>
 We set out to tackle these issues!<br></br>
 By utilizing API interactions, Python, pandas, and Beautiful Soup, we were able to filter the results to find just the selection of data that we wanted.
@@ -25,8 +25,8 @@ Flask\
 \
 Sites (examples):\
 https://www.petfinder.com/
-http://www.famouspoetsandpoems.com\
-https://www.theguardian.com\
+https://wallethub.com/edu/most-pet-friendly-cities/5562/
+https://www.akc.org/expert-advice/news/most-popular-dog-breeds-of-2018/
 
 # Setting Parameters
 
