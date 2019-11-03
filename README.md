@@ -50,12 +50,12 @@ Below, we can see how the Python libraries easily and quickly copied the table c
 
 # API calls and JSON parsing (Extraction and Transformation)
 
-petfinder.com offers an API which is available after receiving an API key.  The possibilities for gathering data in this manner are virtually without limit.  We used the previously scraped city and breed rankings to narrow our search.  Of the 100 ranked cities and 192 ranked dog breeds, we gathered search results for the top ten breeds in or near the top ten cities, with a limit of 50 results per breed per city.  Using our key, we sent requests to the Petfinder API and received our responses in JSON format.  As you can see from the image below, there were far more details included in a typical JSON response than we required.<br></br>
+petfinder.com offers an API which is available after receiving an API key.  The possibilities for gathering data in this manner are virtually without limit.  We used the previously scraped city and breed rankings to narrow our search.  Of the 100 ranked cities and 192 ranked dog breeds, we gathered search results for the top ten breeds in or near the top ten cities, with a limit of 50 results per breed per city.  Using our key, we sent requests to the Petfinder API and received our responses in JSON format.  As you can see from the image below, there were far more details included in a typical JSON response than we required.  A few examples of important elements are highlighted.<br></br>
 
 ![images/highlighted_json.PNG](images/highlighted_json.PNG)<br></br>
 
 
-Using pandas and json_normalize, we parsed the responses to obtain useful information, including the highlighted elements, and discarded items that we would not need.  Note: see our More Info section for details regarding response elements that were discarded.  Some column names were changed to eliminate ambiguity and the "request_num" column was added to track which API request generated each row.
+Using pandas and json_normalize, we parsed the responses to obtain useful information, including the highlighted elements, and discarded items that we would not need.  Note: see our More Info section for details regarding response elements that were discarded.  Some column names were changed to eliminate ambiguity and the "request_num" column was added to track which API request generated each row.  Note: due to geographical overlap of the response radius from multiple API requests, some dogs were reported more than once and were removed during the transformation process.
 
 # Loading to a Database
 
@@ -71,4 +71,8 @@ We have now completed all three steps of the ETL process!<br></br>
 
 Want to interact with this data without experience in SQL or MySQL Workbench?  No Problem!\
 Click the link below to manipulate the data in a platform that does not require MySQL Workbench
-(github.io deployed)
+(coming soon: deployed github.io page.)
+
+# More Info (coming soon)
+
+This section for details regarding API response items that were discarded.
